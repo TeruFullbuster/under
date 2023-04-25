@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Si AQS | Actualízate y digitaliza la forma de prospectar</title>
+	<link rel="icon" type="image/svg" href="assets/img/logo-siaqs-landing.svg">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+	<section>
+		<div class="head">
+			<img src="assets/img/logo-siaqs-landing.svg" alt="logo SI AQS" width="200" onclick="window.location.href='index.php'" style="cursor: pointer;">
+			<div class="desk">
+				<ul>
+					<li class="hvr-backward" onclick="window.location.href='quienes-somos.html'">Quienes somos</li>
+					<li class="hvr-backward">Quiero saber más</li>
+					<li class="hvr-backward" >Acceso a agentes&#160;&#160; <span id="menu"></span></li>
+
+				</ul>
+			</div>
+			<div class="movil">
+				<img src="assets/img/bars-staggered-solid.svg" alt="barra de menu" width="40" onclick="w3_open()">
+			</div>
+		</div>
+	</section>
+	<div class="w3-sidebar" style="display:none" id="mySidebar">
+			<ul class="menu">
+				<li onclick="w3_close('inicio')" style="font-size: 75px; color: var(--c-azul); font-weight: 900;">&times;</li>
+				<li onclick="window.location.href='quienes-somos.html'">Quienes somos</li>
+				<li  onclick="">Quiero saber más</li>
+				<li  onclick="">Acceso a agentes</li>
+			</ul>	
+		</div>
+	<section class="div2 section" style="align-items: center;">
+		<div data-aos="fade-right">
+			<h1 class="c-naranja">Quienes<strong class="c-azul"> somos</strong></h1>
+			<p>SeguroInteligente.mx y AQS son dos agentes de seguros con una trayectoria impecable de más de 30 años de servicio en el sector asegurador. Ambas empresas brindan soluciones en el mercado financiero y asegurador, además se destacan por su gran compromiso con los individuos, empresas y familias mexicanas.</p>
+			<br>
+			<p>En 2023 deciden ser aliados estrategicos y fusionarse para crear la promotoría del futuro que se encargará de tener los mejores agentes y asesores financieros de México y así convertise en un promotoría única.</p>
+		</div>
+		<div data-aos="fade-left">
+			<img src="assets/img/foto-quienes-somos-siaqs.png" alt="quienes somos siaqs" width="400">
+		</div>
+	</section>
+	<section class="footer">
+		<div>
+			<img src="assets/img/logo-siaqs-blanco-01.svg" alt="logo siaqs" width="200">
+		</div>
+		<div>
+			<div class="vinetas hvr-backward " style="align-items: flex-start;" onclick="window.open('https://goo.gl/maps/Kog2ZvRj3NRzeThy6')">
+				<img src="assets/img/location.svg" alt="" width="20">
+				<p style="margin-top: 0">Camino a Santa Teresa 689, Col. Parques del Pedregal, Alcaldia Tlalpan, C.P. 14010, Ciudad de México</p>
+			</div>
+			<div class="vinetas hvr-backward" onclick="window.location.href='mailto: contacto@siaqs.mx'">
+				<img src="assets/img/mail.svg" alt="" width="20">
+				<p>contacto@siaqs.mx</p>
+			</div>
+		</div>
+		<div>
+			<p class="hvr-backward">Contáctanos</p>
+			<p class="hvr-backward">Aviso de Privacidad ingresar</p>
+			<p class="hvr-backward">Términos y Condiciones de uso ingresar</p>
+			<br>
+			<br>
+			<p>Derechos de Autor © SI AQS 2023</p>
+		</div>
+	</section>
+</body>
+<script>
+  AOS.init();
+</script>
+<script>
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	}
+
+	function w3_close(menu) {
+	  document.getElementById("mySidebar").style.display = "none";
+	  window.location.href='#'+menu;
+	}
+</script>
+</html>
